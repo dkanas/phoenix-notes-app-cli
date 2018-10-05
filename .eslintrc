@@ -1,0 +1,35 @@
+{
+  "parser"  : "babel-eslint",
+  "extends" : [
+    "standard",
+    "standard-react",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": [
+    "babel",
+    "react",
+    "promise",
+    "prettier"
+  ],
+  "env"     : {
+    "browser" : true
+  },
+  "globals" : {
+    "__DEV__"      : false,
+    "__PROD__"     : false,
+    "__DEBUG__"    : false,
+    "__COVERAGE__" : false,
+    "__BASENAME__" : false,
+    "IS_STAGING"   : false
+  },
+  "rules": {
+    "react/prop-types": 0,
+    "semi" : [2, "never"],
+    "max-len": [2, 100, 2],
+    "generator-star-spacing": 0,
+    "babel/generator-star-spacing": 1,
+    "jsx-quotes": [2, "prefer-double"],
+    "camelcase": "off"
+  }
+}
