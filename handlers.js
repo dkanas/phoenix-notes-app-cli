@@ -85,7 +85,7 @@ const deleteNote = async noteId => {
 module.exports = {
   ls: listNotes,
   create: createNote,
-  read: readNote,
+  show: readNote,
   update: updateNote,
   delete: deleteNote,
 }
